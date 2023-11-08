@@ -155,30 +155,97 @@ This tutorial guides you through the process of configuring osTicket, an open-so
 <h2>Allowing Anyone to Create Tickets</h2>
 
  - In the **Admin Panel**, under the **Settings** tab, navigate to **Users**. Ensure that the **"Registration Required"** option is unchecked. This allows ticket creation without requiring user registration.
- 
-  <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/c9f8a5c5-3b8a-4adc-b43c-e92550e674bb"/>
+
+   <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/c9f8a5c5-3b8a-4adc-b43c-e92550e674bb"/>
    
 </p>
 
+****
 
-
+<p>
+<h2>Adding Agents and Users</h2>
   
+<h3>Adding Agents:</h3>
 
-  
- 
+ - Agents, also known as workers,  are given the access to the help desk in osTicket to respond, resolve, and update the status of tickets.
+ - To add new agents, go to the Admin Panel, click on Agents, and select "Add New Agent."
 
-<h3>Adding Agents and Users</h3>
+   <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/4706f523-b39a-4c0b-9945-10c5defc4827"/>
+<br>
+
+</p>
 
 <p>
   
-<ul>
-  <li><b>Agents</b> (or Workers) are given the access to the help desk in osTicket to respond, resolve, and update the status of tickets</li>
+ - In this tutorial, we'll create two new Agents, **Jane** and **John**. It's a good idea to have a notepad ready to record their login information. We'll use the usernames **[name].doe** and set both of their passwords to **Password1** for convenience (which is the same as our admin password from the installation tutorial).
+ 
+ - **Here are the steps:**
+
+1. Fill in the Agent's basic information, and set the Agent's email address as **[name].doe@osticket.com**. Then, click on **"Set Password"**.
+
+   <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/7ea0f110-93a3-43ef-8d2a-b01fdf6159cd"/>
+</p>
+
+<br>
+
+<p>
   
-  <ul>
-    <li>In the <b>Admin Panel</b>, head to the <b>Agents</b> tab and click on <b>Add New Agent</b></li>
+2. Set the Agent's password to **"Password1"** and **Uncheck** the boxes to prevent the Agent from needing to reset the password or change it after login.
+
+   <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/1a220861-86c2-4b21-8f9e-067e545dc715"/>
+</p>
+
+</br>
+
+<p>
+  
+3. Next, go to the **"Access"** tab to set the Agent's **"Primary Department"** (which is mandatory to create the Agent). You can also add **"Extended Access"** to allow the Agent to access additional Departments.
+
+   <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/ce18f736-41b3-4247-aad5-54c615175104"/>
+</p>
+
+<br>
+
+<p>
+  
+**NOTE:** Optionally, you can head to the **"Teams"** tab to assign the Agent to a specific team.
+</p>
+
+****
+
     <ul>
-      <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/4706f523-b39a-4c0b-9945-10c5defc4827"/></li>
+    <li></li>
     </ul>
+    <li>OPTIONAL: Head to the <b>Teams</b> tab to assign the Agent to a Team</li>
+   </p>
+<p>
+  
+<br>
+
+
+
+
+
+
+
+
+
+
+<h3>Adding Users:</h3>
+
+ - Users, or customers, create and own tickets.  They can also track their ticket status.
+ - Access the Users tab in the Agent Panel and click on "Add User" to create new users.
+ - Follow these steps to effectively manage both agents and users.
+
+  
+
+
+
+
+
+</p>
+
+
     <li>For this tutorial, we will be creating two new Agents <b>Jane</b> and <b>John</b>, it is advise to have a notepad ready to catalog login information as you enter their credentials, but we will set their user names as <b>[name].doe</b> and both of their passwords as <b>Password1</b> for convenience (which is our admin password from the installation tutorial)</li>
     <ul>
       <li>Fill in the Agent's basic info and set the Agent's email address as <b>[name].doe@osticket.com</b> and click on <b>Set Password</b></li>
