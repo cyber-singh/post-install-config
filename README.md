@@ -163,9 +163,9 @@ This tutorial guides you through the process of configuring osTicket, an open-so
 ****
 
 <p>
-<h2>Adding Agents and Users</h2>
+<h2>Configuring Agents and Users</h2>
   
-<h3>Adding Agents:</h3>
+<h3>configuring Agents:</h3>
 
  - Agents, also known as workers,  are given the access to the help desk in osTicket to respond, resolve, and update the status of tickets.
  - To add new agents, go to the Admin Panel, click on Agents, and select "Add New Agent."
@@ -214,7 +214,7 @@ This tutorial guides you through the process of configuring osTicket, an open-so
 ****
 
 <p>
-  <h3>Adding Users:</h3>
+  <h2>Configuring Users:</h2>
 
  - **Users** or **Customers** are the individuals who create and own tickets, and they can track the status of their tickets.
 
@@ -234,46 +234,57 @@ This tutorial guides you through the process of configuring osTicket, an open-so
    <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/c3dd9d8c-e64d-4dae-8b16-8deef92bf41c"/>
   </p>
 
-  
-    </ul>
-    <li>For this tutorial, we will be creating two new Users <b>Ken</b> and <b>Karen</b> and setting up usernames, emails, and passwords similar to our Agents.</li>
-    <ul>
-      <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/c3dd9d8c-e64d-4dae-8b16-8deef92bf41c"/></li>
-    </ul>
-  </ul>
-  
-</ul>
-  
-</p>
+****
 
-</br>
+<p>
+  <h2>Configuring SLA</h2>
 
-<h3>Adding SLA Plans</h3>
+ - Service Level Agreement (SLA) is like a promise about how quickly someone will respond to or fix a problem in a ticket. The promise might change depending on how important the problem is. For instance, if the promise is to respond within **4 hours** for a **"high priority problem"**, then they need to do it within that time.
+
+<br>
+
+<h3>Follow these steps to set up SLA plans:</h3>
+
+1. In the **Admin Panel**, navigate to the **Manage** tab and select **SLA**. 
+
+  <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/e76fc18a-6676-4b87-a3de-7b986e2206e2"/>
+   </p>
+
+<br>
 
 <p>
   
-<ul>
-  <li><b>Service Level Agreements</b> or SLA Plans provide a length of time for the ticket Administrator when the ticket is expected be CLOSED. They can also be designated to specific Departments or Help Topics</li>
-  <li>In the <b>Admin Panel</b>, go to the <b>Manage</b> tab and drop down to <b>SLA</b> then click on <b>Add New SLA Plan</b></li>
-  <ul>
-    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/e76fc18a-6676-4b87-a3de-7b986e2206e2"/></li>
-    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/88409634-f17f-4b24-9388-cc791f7a87a2"/></li>
-  </ul>
-  <li>osTicket by default has the SLA Plan <b>Default SLA</b>. We will be creating three SLA Plans each with their own length of time for different kinds of importance of the ticket, from highest priority to lowest priority:</li>
-  <ol>
-    <li>SEV-A with <b>1 hour Grace Period, 24/7 Schedule</b>, suitable for tickets that are business critical</li>
-    <li>SEV-B with <b>4 hour Grace Period, 24/7 Schedule</b>, suitable for tickets affecting employees such as troubleshooting or PC problems</li>
-    <li>SEV-C with <b>8 hour Grace Period, business hours Schedule</b>, suitable for tickets requesting new equipment</li>
-  </ol>
-  <li>Example of creating SEV-A SLA Plan, click on <b>Add Plan</b> to create the SLA Plan</li>
-  <ul>
-    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/875afb75-7833-4bef-a940-b7824b74aa1f"/></li>
-  </ul>
-</ul>
+2. Then, click on **Add New SLA Plan**.
   
+  <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/88409634-f17f-4b24-9388-cc791f7a87a2"/>
+   </p>
+
+   <br>
+
+<p>
+
+3. By default, osTicket includes the **"Default SLA"** plan. In this tutorial, we will create three SLA Plans, each with its own time frame for different levels of ticket importance, ranging from highest to lowest priority:
+   - **SEV-A** with a **1-hour** Grace Period, **available 24/7**, suitable for **business-critical** tickets.
+   - **SEV-B** with a **4-hour** Grace Period, **available 24/7**, suitable for tickets affecting employees, such as **troubleshooting or PC problems**.
+   - **SEV-C** with an **8-hour** Grace Period, **available during business hours**, suitable for tickets **requesting new equipment**.
+
+<br>
+
+4. Follow the example to create the SEV-A SLA Plan, then click on **Add Plan** to complete the **SLA Plan** setup.
+   
+    <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/875afb75-7833-4bef-a940-b7824b74aa1f"/>
 </p>
 
-</br>
+****
+
+
+
+
+
+
+
+
+
 
 <h3>Configuring Help Topics</h3>
 
