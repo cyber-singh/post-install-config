@@ -179,7 +179,7 @@ This tutorial guides you through the process of configuring osTicket, an open-so
   
  - In this tutorial, we'll create two new Agents, **Jane** and **John**. It's a good idea to have a notepad ready to record their login information. We'll use the usernames **[name].doe** and set both of their passwords to **Password1** for convenience (which is the same as our admin password from the installation tutorial).
  
-<h2>Here are the steps:</h2>
+<h3>Here are the steps:</h3>
 
 1. Fill in the Agent's basic information, and set the Agent's email address as **[name].doe@osticket.com**. Then, click on **"Set Password"**.
 
@@ -218,7 +218,7 @@ This tutorial guides you through the process of configuring osTicket, an open-so
 
  - **Users** or **Customers** are the individuals who create and own tickets, and they can track the status of their tickets.
 
-**Here's how to create new Users:**
+<h3>Here's how to create new Users:</h3>
 
 1. In the **"Agent Panel"** navigate to the **"Users"** tab and click on **"Add User"**.
 
