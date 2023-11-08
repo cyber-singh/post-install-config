@@ -300,28 +300,31 @@ Help topics streamline the ticket submission process by guiding users to specify
 
  - We'll create four Help Topics to show how serious different problems can be, from most critical to less critical:
 
- - Business Critical Outage
- - Personal Computer Issues
- - Equipment Request
- - Password Reset
-  </p>
+1. Business Critical Outage
+2. Personal Computer Issues
+3. Equipment Request
+4. Password Reset
+</p>
 
-  <br>
+<br>
   
 <p>
     
- - To create a Help Topic, follow the example for "Equipment Request" and click Add Topic.
+ - To create a Help Topic, follow the example for **"Equipment Request"** and click **Add Topic**.
 
    <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/b004bb9f-336c-46f8-81e7-d12f1127bd33"/>
 </p>
 
 ****
 
-<h3>Further Reading and Manual</h3>
-<ul>
-  <li>This concludes to basics of osTicket configuration, but further information and research on the features of osTicket can be found in the official online documentation <a href= "https://docs.osticket.com/en/latest/index.html">here</a></li>
-</ul>
+<h3>Congratulations</h3>
+
+ - You've successfully configured **osTicket**, turning it into a streamlined ticketing system tailored to your needs. With **Roles**, **Departments**, **Teams**, and **SLA Plans** in place, you've laid the foundation for efficient ticket management.
+
+ - Remember, these configurations empower your team to handle tickets effectively, categorize them with precision, and meet service level expectations. The clarity brought by **Help Topics** ensures users can communicate their needs seamlessly.
+
+ - Now that you've completed this tutorial, feel free to explore further features <a href= "https://docs.osticket.com/en/latest/index.html">here</a></li>
 
 <br/>
 
-<h3 align = "right">Next Tutorial - <a href = "https://github.com/cyber-singh/ticket-lifecycle">osTicket: Ticket Lifecycle Examples</a></h3>  
+<h2 align = "right">Next Tutorial - <a href = "https://github.com/cyber-singh/ticket-lifecycle">osTicket: Ticket Lifecycle Examples</a></h2>  
