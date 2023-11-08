@@ -104,21 +104,27 @@ Now, let's proceed to the actual configuration steps:
 <br>
 
 </p>
-<p>
 
+<p>
+  
 **Note:** Much like Roles, osTicket also creates two Departments **Maintenance** and **Support** by default.
 
 <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/06727f1a-b130-4a02-bffe-9da229658e29"/>
+</p>
 
+<p>
+  
 <br>
 
  - Name the Department **System Administrators** (we'll leave everything else by default for now), then click on **Create Dept** to create Department.
-
 <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/1906c7bf-57cf-4499-a56a-0d5a24f925a3"/>
-
 </p>
 
+****
 
+<p>
+  
+</p>
 
 
 
