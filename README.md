@@ -229,7 +229,7 @@ This tutorial guides you through the process of configuring osTicket, an open-so
 
 <p>  
 2. For this tutorial, we will create two new Users, Ken and Karen, and set up their usernames, emails, and passwords in a similar way to our Agents.
-   
+  
   <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/c3dd9d8c-e64d-4dae-8b16-8deef92bf41c"/>
   </p>
 
