@@ -192,7 +192,7 @@ This tutorial guides you through the process of configuring osTicket, an open-so
   
 2. Set the Agent's password to **"Password1"** and **Uncheck** the boxes to prevent the Agent from needing to reset the password or change it after login.
 
-   <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/1a220861-86c2-4b21-8f9e-067e545dc715"/>
+   <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/25ad4be8-3197-48c7-99b7-55ac94bc68d5"/>
 </p>
 
 </br>
