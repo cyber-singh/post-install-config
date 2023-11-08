@@ -2,81 +2,132 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
+<p>
+  
 <h1 align="center">osTicket - Post-Install Configuration</h1>
-This tutorial outlines the post-install configuration of the open-source help desk ticketing system osTicket. This tutorial assumes you have fully completed, installed, set up login credentials, and perform clean up on osTicket in your Virtual Machine environment via following the previous tutorial <a href ="https://github.com/cyber-singh/osticket-prereqs">"osTicket - Prerequisites and Installation"</a><br />
+This tutorial guides you through the process of configuring osTicket, an open-source help desk ticketing system, after it's been installed. It's important to note that this tutorial assumes you've already completed the installation, set up your login credentials, and performed necessary cleanup steps within your Virtual Machine environment. These prerequisites were covered in a previous tutorial titled <a href ="https://github.com/cyber-singh/osticket-prereqs">"osTicket - Prerequisites and Installation"</a><br />
+</p>
 
-</br>
+****
+<p>
 
 <h2>Environments and Technologies Used</h2>
-<ul>
-  <li>Microsoft Azure (Virtual Machines/Compute)</li>
-  <li>Remote Desktop</li>
-  <li>Internet Information Services (IIS)</li>
-  <li>osTicket</li>
-</ul>
+
+Before we dive into the configuration process, let's take a look at the environments and technologies involved:
+
+ - **Virtual Machine Platform:** Microsoft Azure (Virtual Machines/Compute)
+ - **Access Method:** Remote Desktop
+ - **Web Server:** Internet Information Services (IIS)
+ - **Ticketing System:** osTicket
+ - **Operating System:** Windows 10
+
+</p>
 
 </br>
 
-<h2>Operating Systems Used </h2>
-<ul>
-  <li>Windows 10</li>
-</ul>
-
-</br>
-
+<p>
 <h2>Post-Install Configuration Objectives</h2>
-<ol>
-  <li>Familiarity with the UI of osTicket</li>
-  <li>Creating and Configuring Roles</li>
-  <li>Creation of Tickets</li>
-  <li>Creating Agents and Users</li>
-  <li>Setting up Service Level Agreements (SLA Plans) in ticketing system</li>
-  <li>Configuring Help Topics</li>
-</ol>
+
+**1. Familiarize with osTicket's User Interface:** Get to know the layout and features of osTicket's user interface.
+
+**2. Create and Configure Roles:** Assign specific permissions to agents within their respective departments.
+
+**3. Ticket Creation:** Understand how to create tickets effectively.
+
+**4. Agent and User Management:** Learn how to set up agents and users for efficient ticket handling.
+
+**5. Service Level Agreements (SLA Plans):** Configure SLA plans to manage ticket response times.
+
+**6. Help Topic Configuration:** Set up help topics to streamline the ticket submission process.
+
+Now, let's proceed to the actual configuration steps:
+</p>
 
 </br>
 
 <h2>Configuration Setups</h2>
+<p>
+  To get started, open your web browser and access osTicket. Log in using the credentials you created in the previous tutorial.
 
-<!-- <img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/> -->
+  **Note:** When using osTicket, you'll come across two panels. The **Agent Panel** and the **Admin Panel**. You can determine which panel you are currently on by checking the label in the top right corner of the user interface, located next to your user login name. As an example, if you see the label **"Admin Panel"**, you are in the **"Agent Panel"** and Vice Versa.
+</p>
+<br>
 
-<h3>Configuring Roles, Departments, & Teams</h3>
+ - In this example, the user **"josh"** is on the Agent Panel
+<p>
+<img src="https://github.com/cyber-singh/post-install-config/assets/149118027/9e560b66-9fd6-49f1-991a-30f6aeacae60"/>
+
+<img src="https://github.com/cyber-singh/post-install-config/assets/149118027/1f3b7eb2-bfd7-46ad-8118-fae12dc1f926"/>    
+</p>
+
+****
+
+<p>
+<h2>Configuring Roles, Departments, & Teams</h2>
+
+<h3>Roles:</h3>
+
+ - Roles are crucial for assigning specific permissions to agents within their departments.
+ - To create a new role, navigate to the **Admin Panel**, go to **Agents**, and select **Roles**. Click **"Add New Role"**, and specify the role's **Name and Permissions**.
+<br>
+
+**Note:** osTickets creates four Roles (All Access, Expanded Access, Limited Access, and View Only) by default.
+
+<img src="https://github.com/cyber-singh/post-install-config/assets/149118027/68a1f67a-86a9-4a21-956a-0afc55c7af14"/>
+</p>
+<br>
 
 <p>
   
-<ul>
-  <li><b>Note</b>: There are two panels when navigating osTicket; <b>Agent Panel</b> and <b>Admin Panel</b>, you'll know which panel you are on if the <b>opposite panel</b> is displayed on the top right of the UI next to your user login name</li>
-  <ul>
-    <li>In this example, the user "josh" is on the Agent Panel</li>
-    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/9e560b66-9fd6-49f1-991a-30f6aeacae60"/></li>
+ - Name the new Role **Supreme Admin**.
 
- <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/1f3b7eb2-bfd7-46ad-8118-fae12dc1f926"/></li>    
-  </ul>
-  <li><b>Roles</b> grant certain permisions to Agents in an Department they are assigned to</li>
-  <ul>
-    <li>In the <b>Admin Panel</b>, go to the <b>Agents</b> tab and click on <b>Roles</b>, then click on <b>Add New Role</b></li>
-    <ul>
-      <li><b>Note</b>: osTickets creates four Roles (All Access, Expanded Access, Limited Access, and View Only) by default.</li>
-      <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/37a4662b-3399-483e-8f66-c21814481e56"/></li>
-    </ul>
-    <li>Name the new Role <b>Supreme Admin</b>, and click on the <b>Permissions</b> tab; in this tab you can assign specific permissions to this role. For our "Supreme Admin" Role, we will check every box under the <b>Tickets</b>, <b>Tasks</b>, and <b>Knowledgebase</b> tabs. Click on <b>Add Role</b> to finish and create the role.</li>
-    <ul>
-      <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/114a204b-6017-4da4-8478-b2af162c8cf7"/></li>
-    </ul>
-  </ul>
+ <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/53fb7cae-3e77-489e-93b6-cda2573662d7"/>
+</p>
 
-  <li><b>Departments</b> are needed to route and resolve tickets based on their importance or instructions</li>
-  <ul>
-  <li>Still on the Agents tab, click on <b>Departments</b> and click on <b>Add New Department</b></li>
-  <ul>
-    <li><b>Note</b>: Much like Roles, osTicket also creates two Departments (Maintenance and Support) by default</li>
-    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/06727f1a-b130-4a02-bffe-9da229658e29"/></li>
-  </ul>
-  <li>Name the Department <b>System Administrators</b> (we'll leave everything else by default for now), then click on <b>Create Dept</b> to create Department</li>
-  <ul>
-    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/1906c7bf-57cf-4499-a56a-0d5a24f925a3"/></li>
-  </ul>
-  </ul>
+<p>
+  <br>
+  
+ - Navigate to the **"Permissions"** tab, where you can assign precise permissions to this role. For the **"Supreme Admin"** role, we will check all the checkboxes under the **"Tickets"**, **"Tasks"**, and **"Knowledgebase"** sections. Finally, click on **"Add Role"** to complete and create the role.
+
+  <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/7dce691b-7bc3-4e9b-8e24-c84f84e2de62"/>
+  
+</p>
+
+****
+
+<p>
+
+  <h2>Departments</h2>
+
+ - Departments play a vital role in routing and resolving tickets based on their importance and specific instructions.
+ - Create a new department through the same Agents tab. Navigate to the **"Departments"** tab and click on **"Add New Department"**.
+<br>
+
+</p>
+<p>
+
+**Note:** Much like Roles, osTicket also creates two Departments **Maintenance** and **Support** by default.
+
+<img src="https://github.com/cyber-singh/post-install-config/assets/149118027/06727f1a-b130-4a02-bffe-9da229658e29"/>
+
+<br>
+
+ - Name the Department **System Administrators** (we'll leave everything else by default for now), then click on **Create Dept** to create Department.
+
+<img src="https://github.com/cyber-singh/post-install-config/assets/149118027/1906c7bf-57cf-4499-a56a-0d5a24f925a3"/>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+ 
 
   <li><b>Teams</b> allow us to organize Agents from different Departments in osTicket to handle specific issues and supersede Agents and their Departments' parameter rules</li>
   <ul>
