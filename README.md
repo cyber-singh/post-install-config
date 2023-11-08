@@ -10,10 +10,9 @@ This tutorial guides you through the process of configuring osTicket, an open-so
 
 ****
 <p>
-
 <h2>Environments and Technologies Used</h2>
-
-Before we dive into the configuration process, let's take a look at the environments and technologies involved:
+  
+  Before we dive into the configuration process, let's take a look at the environments and technologies involved:
 
  - **Virtual Machine Platform:** Microsoft Azure (Virtual Machines/Compute)
  - **Access Method:** Remote Desktop
@@ -26,38 +25,42 @@ Before we dive into the configuration process, let's take a look at the environm
 </br>
 
 <p>
-<h2>Post-Install Configuration Objectives</h2>
+  <h2>Post-Install Configuration Objectives</h2>
+  
+  **1. Familiarize with osTicket's User Interface:** Get to know the layout and features of osTicket's user interface.
 
-**1. Familiarize with osTicket's User Interface:** Get to know the layout and features of osTicket's user interface.
+  **2. Create and Configure Roles:** Assign specific permissions to agents within their respective departments.
 
-**2. Create and Configure Roles:** Assign specific permissions to agents within their respective departments.
+  **3. Ticket Creation:** Understand how to create tickets effectively.
 
-**3. Ticket Creation:** Understand how to create tickets effectively.
+  **4. Agent and User Management:** Learn how to set up agents and users for efficient ticket handling.
 
-**4. Agent and User Management:** Learn how to set up agents and users for efficient ticket handling.
+  **5. Service Level Agreements (SLA Plans):** Configure SLA plans to manage ticket response times.
 
-**5. Service Level Agreements (SLA Plans):** Configure SLA plans to manage ticket response times.
-
-**6. Help Topic Configuration:** Set up help topics to streamline the ticket submission process.
-
-Now, let's proceed to the actual configuration steps:
+  **6. Help Topic Configuration:** Set up help topics to streamline the ticket submission process.
+  
+  Now, let's proceed to the actual configuration steps:
 </p>
 
 </br>
 
-<h2>Configuration Setups</h2>
 <p>
+  <h2>Configuration Setups</h2>
+  
   To get started, open your web browser and access osTicket. Log in using the credentials you created in the previous tutorial.
 
   **Note:** When using osTicket, you'll come across two panels. The **Agent Panel** and the **Admin Panel**. You can determine which panel you are currently on by checking the label in the top right corner of the user interface, located next to your user login name. As an example, if you see the label **"Admin Panel"**, you are in the **"Agent Panel"** and Vice Versa.
 </p>
+
 <br>
 
- - In this example, the user **"josh"** is on the Agent Panel
 <p>
-<img src="https://github.com/cyber-singh/post-install-config/assets/149118027/9e560b66-9fd6-49f1-991a-30f6aeacae60"/>
+  
+  - In this example, the user **"josh"** is on the Agent Panel
+  
+    <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/9e560b66-9fd6-49f1-991a-30f6aeacae60"/>
 
-<img src="https://github.com/cyber-singh/post-install-config/assets/149118027/1f3b7eb2-bfd7-46ad-8118-fae12dc1f926"/>    
+    <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/1f3b7eb2-bfd7-46ad-8118-fae12dc1f926"/>    
 </p>
 
 ****
@@ -81,7 +84,7 @@ Now, let's proceed to the actual configuration steps:
   
  - Name the new Role **Supreme Admin**.
 
- <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/53fb7cae-3e77-489e-93b6-cda2573662d7"/>
+   <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/53fb7cae-3e77-489e-93b6-cda2573662d7"/>
 </p>
 
 <p>
@@ -89,7 +92,7 @@ Now, let's proceed to the actual configuration steps:
   
  - Navigate to the **"Permissions"** tab, where you can assign precise permissions to this role. For the **"Supreme Admin"** role, we will check all the checkboxes under the **"Tickets"**, **"Tasks"**, and **"Knowledgebase"** sections. Finally, click on **"Add Role"** to complete and create the role.
 
-  <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/7dce691b-7bc3-4e9b-8e24-c84f84e2de62"/>
+   <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/7dce691b-7bc3-4e9b-8e24-c84f84e2de62"/>
   
 </p>
 
@@ -109,7 +112,7 @@ Now, let's proceed to the actual configuration steps:
   
 **Note:** Much like Roles, osTicket also creates two Departments **Maintenance** and **Support** by default.
 
-<img src="https://github.com/cyber-singh/post-install-config/assets/149118027/06727f1a-b130-4a02-bffe-9da229658e29"/>
+ <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/06727f1a-b130-4a02-bffe-9da229658e29"/>
 </p>
 
 <p>
@@ -117,57 +120,52 @@ Now, let's proceed to the actual configuration steps:
 <br>
 
  - Name the Department **System Administrators** (we'll leave everything else by default for now), then click on **Create Dept** to create Department.
-<img src="https://github.com/cyber-singh/post-install-config/assets/149118027/1906c7bf-57cf-4499-a56a-0d5a24f925a3"/>
+
+    <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/1906c7bf-57cf-4499-a56a-0d5a24f925a3"/>
 </p>
 
 ****
 
 <p>
-  
-</p>
+<h2>Teams:</h2>
 
-
-
-
-
-
-
-
+ - Teams provide a way to organize agents from different departments to handle specific issues and override department-specific rules.
  
+ - In the **Agents tab**, click on **Teams**, then select **"Add New Team"** to create a new team.
 
-  <li><b>Teams</b> allow us to organize Agents from different Departments in osTicket to handle specific issues and supersede Agents and their Departments' parameter rules</li>
-  <ul>
-    <li>In the Agents tab, click on <b>Teams</b> and click on <b>Add New Team</b></li>
-    <ul>
-    <li><b>Note</b>: Just like previous set ups, osTicket creates a Team (Level I Support) by default</li>
-    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/f3cfe6ea-03a6-4f38-8bd9-0e7160eaf8ff"/></li>
-    </ul>
-    <li>Name the Team <b>Level II Support</b> then click on <b>Create Team</b> to create the Team</li>
-    <ul>
-      <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/14fcef36-33d0-47a1-8d02-29181c20b4ed"/></li>
-    </ul>
-  </ul>
+<br>
+
+**Note:** Just like previous set ups, osTicket creates a **Team (Level I Support)** by default.
   
-</ul>
-  
-</p>
+<img src="https://github.com/cyber-singh/post-install-config/assets/149118027/f3cfe6ea-03a6-4f38-8bd9-0e7160eaf8ff"/>
+ </p>
 
-</br>
-
-<h3>Allowing anyone to create Tickets</h3>
+<br>
 
 <p>
   
-<ul>
-  <li>In the <b>Admin Panel</b>, head to the <b>Settings</b> tab and click on <b>Users</b>, make sure <b>Registration Required</b> is unchecked. This will allow us to create tickets anonymously</li>
-  <ul>
-    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/edeb9a59-46c2-4e4f-aaa1-29db2c45f6ec"/></li>
-  </ul>
-</ul>
-  
+ - Name the Team **Level II Support** then click on **Create Team** to create the Team.
+
+    <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/14fcef36-33d0-47a1-8d02-29181c20b4ed"/>
 </p>
 
-</br>
+****
+
+<p>
+<h2>Allowing Anyone to Create Tickets</h2>
+
+ - In the **Admin Panel**, under the **Settings** tab, navigate to **Users**. Ensure that the **"Registration Required"** option is unchecked. This allows ticket creation without requiring user registration.
+ 
+  <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/c9f8a5c5-3b8a-4adc-b43c-e92550e674bb"/>
+   
+</p>
+
+
+
+  
+
+  
+ 
 
 <h3>Adding Agents and Users</h3>
 
