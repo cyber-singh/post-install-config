@@ -48,18 +48,20 @@ This tutorial outlines the post-install configuration of the open-source help de
   <li><b>Note</b>: There are two panels when navigating osTicket; <b>Agent Panel</b> and <b>Admin Panel</b>, you'll know which panel you are on if the <b>opposite panel</b> is displayed on the top right of the UI next to your user login name</li>
   <ul>
     <li>In this example, the user "josh" is on the Agent Panel</li>
-    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/6abb22de-3ec5-47a9-8efd-46caf9d1622f" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/9e560b66-9fd6-49f1-991a-30f6aeacae60"/></li>
+
+ <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/1f3b7eb2-bfd7-46ad-8118-fae12dc1f926"/></li>    
   </ul>
   <li><b>Roles</b> grant certain permisions to Agents in an Department they are assigned to</li>
   <ul>
     <li>In the <b>Admin Panel</b>, go to the <b>Agents</b> tab and click on <b>Roles</b>, then click on <b>Add New Role</b></li>
     <ul>
       <li><b>Note</b>: osTickets creates four Roles (All Access, Expanded Access, Limited Access, and View Only) by default.</li>
-      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/6347ce31-f5f1-4078-b738-dc70dd037df6" alt="Disk Sanitization Steps"/></li>
+      <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/37a4662b-3399-483e-8f66-c21814481e56"/></li>
     </ul>
     <li>Name the new Role <b>Supreme Admin</b>, and click on the <b>Permissions</b> tab; in this tab you can assign specific permissions to this role. For our "Supreme Admin" Role, we will check every box under the <b>Tickets</b>, <b>Tasks</b>, and <b>Knowledgebase</b> tabs. Click on <b>Add Role</b> to finish and create the role.</li>
     <ul>
-      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/306c368f-76fb-4b25-869b-d1a1f430ed76" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+      <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/114a204b-6017-4da4-8478-b2af162c8cf7"/></li>
     </ul>
   </ul>
 
@@ -68,11 +70,11 @@ This tutorial outlines the post-install configuration of the open-source help de
   <li>Still on the Agents tab, click on <b>Departments</b> and click on <b>Add New Department</b></li>
   <ul>
     <li><b>Note</b>: Much like Roles, osTicket also creates two Departments (Maintenance and Support) by default</li>
-    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/2a449d47-9632-47ee-9606-65512e292a2e" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/06727f1a-b130-4a02-bffe-9da229658e29"/></li>
   </ul>
   <li>Name the Department <b>System Administrators</b> (we'll leave everything else by default for now), then click on <b>Create Dept</b> to create Department</li>
   <ul>
-    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/700f78be-2640-4f34-85d6-0ab8ff6ae994" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/1906c7bf-57cf-4499-a56a-0d5a24f925a3"/></li>
   </ul>
   </ul>
 
@@ -81,11 +83,11 @@ This tutorial outlines the post-install configuration of the open-source help de
     <li>In the Agents tab, click on <b>Teams</b> and click on <b>Add New Team</b></li>
     <ul>
     <li><b>Note</b>: Just like previous set ups, osTicket creates a Team (Level I Support) by default</li>
-    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/5ede2f9c-91d5-4f9b-8199-99e8f0696e5c" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/f3cfe6ea-03a6-4f38-8bd9-0e7160eaf8ff"/></li>
     </ul>
     <li>Name the Team <b>Level II Support</b> then click on <b>Create Team</b> to create the Team</li>
     <ul>
-      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/b9aa5ab2-2c41-4666-a4f2-6a0f3ff88bc1" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+      <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/14fcef36-33d0-47a1-8d02-29181c20b4ed"/></li>
     </ul>
   </ul>
   
@@ -102,7 +104,7 @@ This tutorial outlines the post-install configuration of the open-source help de
 <ul>
   <li>In the <b>Admin Panel</b>, head to the <b>Settings</b> tab and click on <b>Users</b>, make sure <b>Registration Required</b> is unchecked. This will allow us to create tickets anonymously</li>
   <ul>
-    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/97c51388-324a-42e0-a808-067de164c4b6" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/edeb9a59-46c2-4e4f-aaa1-29db2c45f6ec"/></li>
   </ul>
 </ul>
   
@@ -120,18 +122,18 @@ This tutorial outlines the post-install configuration of the open-source help de
   <ul>
     <li>In the <b>Admin Panel</b>, head to the <b>Agents</b> tab and click on <b>Add New Agent</b></li>
     <ul>
-      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/d66757f0-54d1-458f-8a2d-4f1890b2da1d" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+      <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/4706f523-b39a-4c0b-9945-10c5defc4827"/></li>
     </ul>
     <li>For this tutorial, we will be creating two new Agents <b>Jane</b> and <b>John</b>, it is advise to have a notepad ready to catalog login information as you enter their credentials, but we will set their user names as <b>[name].doe</b> and both of their passwords as <b>Password1</b> for convenience (which is our admin password from the installation tutorial)</li>
     <ul>
       <li>Fill in the Agent's basic info and set the Agent's email address as <b>[name].doe@osticket.com</b> and click on <b>Set Password</b></li>
-      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/06fbd1ca-9d97-4f4f-b866-9b304dbdeb57" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+      <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/7ea0f110-93a3-43ef-8d2a-b01fdf6159cd"/></li>
       <li>Set the Agent's password to <b>Password1</b> and unchecked the boxes to prevent the Agent for our example from needing to reset password or change password after login</li>
-      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/51953148-bddc-476c-9368-4b62f4bf3d42" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+      <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/1a220861-86c2-4b21-8f9e-067e545dc715"/></li>
     </ul>
     <li>Go the <b>Access</b> tab to set the Agent's <b>Primary Department</b> (Mandatory to create the Agent). <b>Extended Access</b> can also be added to the Agent in order to access additional Departments</li>
     <ul>
-    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/c57bca22-2622-4f01-88eb-bd699d1f12de" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/ce18f736-41b3-4247-aad5-54c615175104"/></li>
     </ul>
     <li>OPTIONAL: Head to the <b>Teams</b> tab to assign the Agent to a Team</li>
   </ul>
@@ -141,11 +143,11 @@ This tutorial outlines the post-install configuration of the open-source help de
   <ul>
     <li>In the <b>Agent Panel</b>, go to the <b>Users</b> tab and click on <b>Add User</b></li>
     <ul>
-      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/f08ec067-3a66-420e-bfaf-6a3003512bcb" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+      <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/14e0ed5a-189a-4e65-b9f1-05d16e816027"/></li>
     </ul>
     <li>For this tutorial, we will be creating two new Users <b>Ken</b> and <b>Karen</b> and setting up usernames, emails, and passwords similar to our Agents.</li>
     <ul>
-      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/8eadff14-b483-4781-9679-80b252a092c4" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+      <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/c3dd9d8c-e64d-4dae-8b16-8deef92bf41c"/></li>
     </ul>
   </ul>
   
@@ -163,8 +165,8 @@ This tutorial outlines the post-install configuration of the open-source help de
   <li><b>Service Level Agreements</b> or SLA Plans provide a length of time for the ticket Administrator when the ticket is expected be CLOSED. They can also be designated to specific Departments or Help Topics</li>
   <li>In the <b>Admin Panel</b>, go to the <b>Manage</b> tab and drop down to <b>SLA</b> then click on <b>Add New SLA Plan</b></li>
   <ul>
-    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/1ebc6fe9-aa95-4e52-9fd9-1ecd7724d3b9" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
-    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/cf8da66d-209b-40e6-a4f1-c99bbd102b3a" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/e76fc18a-6676-4b87-a3de-7b986e2206e2"/></li>
+    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/88409634-f17f-4b24-9388-cc791f7a87a2"/></li>
   </ul>
   <li>osTicket by default has the SLA Plan <b>Default SLA</b>. We will be creating three SLA Plans each with their own length of time for different kinds of importance of the ticket, from highest priority to lowest priority:</li>
   <ol>
@@ -174,7 +176,7 @@ This tutorial outlines the post-install configuration of the open-source help de
   </ol>
   <li>Example of creating SEV-A SLA Plan, click on <b>Add Plan</b> to create the SLA Plan</li>
   <ul>
-    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/ee7d6fbb-f67a-4055-aa9b-b9fd77d48de1" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/875afb75-7833-4bef-a940-b7824b74aa1f"/></li>
   </ul>
 </ul>
   
@@ -191,7 +193,7 @@ This tutorial outlines the post-install configuration of the open-source help de
   <li>In the <b>Admin Panel</b>, go to the <b>Manage</b> tab and click on <b>Add New Help Topic</b></li>
   <ul>
     <li><b>Note</b>: osTicket creates four Help Topics (Feedback, General Inquiry, Report a Problem, and Report a Problem / Access Issue) by default</li>
-    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/27299450-a705-462c-a7d0-6fcdac6f5a59" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/2475b22a-27d3-4fdc-9b1f-40d434d8b0af"/></li>
   </ul>
   <li>We will create four different Help Topics based on the potential serverity a ticket could have, from highest to lowest priority:</li>
   <ol>
@@ -202,7 +204,7 @@ This tutorial outlines the post-install configuration of the open-source help de
   </ol>
   <li>Example of entering credentials for the Help Topic "Equipment Request," click on <b>Add Topic</b> to create the Help Topic</li>
   <ul>
-    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/97777c9e-516c-4831-891b-9d65e9613ed0" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/b004bb9f-336c-46f8-81e7-d12f1127bd33"/></li>
   </ul>
   
 </ul>
@@ -213,9 +215,9 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h3>Further Reading and Manual</h3>
 <ul>
-  <li>This concludes to basics of osTicket configuration, but further information and research on the features of osTicket can be found in the official online doccumentation <a href= "https://docs.osticket.com/en/latest/index.html">here</a></li>
+  <li>This concludes to basics of osTicket configuration, but further information and research on the features of osTicket can be found in the official online documentation <a href= "https://docs.osticket.com/en/latest/index.html">here</a></li>
 </ul>
 
 <br/>
 
-<h3 align = "right">Next Tutorial - <a href = "https://github.com/Cyber-singh/ticket-lifecycle">osTicket: Ticket Lifecycle Examples</a></h3>
+<h3 align = "right">Next Tutorial - <a href = "[https://github.com/Cyber-singh/ticket-lifecycle](https://github.com/cyber-singh/ticket-lifecycle)">osTicket: Ticket Lifecycle Examples</a></h3>  
