@@ -277,43 +277,45 @@ This tutorial guides you through the process of configuring osTicket, an open-so
 
 ****
 
-
-
-
-
-
-
-
-
-
-<h3>Configuring Help Topics</h3>
-
 <p>
+<h2>Configuring Help Topics</h2>
+
+Help topics streamline the ticket submission process by guiding users to specify their issues and determine the appropriate department.
+
+<h3>Help Topics:</h3>
+ 
+ - In the **Admin Panel**, go to the **Manage** section and choose **Add New Help Topic**.
+
+<br>
+
   
-<ul>
-  <li><b>Help Topics</b> are helpful to streamline the ticket entry experience for the user by helping them specify their ticket info and also determine what Department the ticket should go to</li>
-  <li>In the <b>Admin Panel</b>, go to the <b>Manage</b> tab and click on <b>Add New Help Topic</b></li>
-  <ul>
-    <li><b>Note</b>: osTicket creates four Help Topics (Feedback, General Inquiry, Report a Problem, and Report a Problem / Access Issue) by default</li>
-    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/2475b22a-27d3-4fdc-9b1f-40d434d8b0af"/></li>
-  </ul>
-  <li>We will create four different Help Topics based on the potential serverity a ticket could have, from highest to lowest priority:</li>
-  <ol>
-    <li>Business Critical Outage</li>
-    <li>Personal Computer Issues </li>
-    <li>Equipment Request</li>
-    <li>Password Reset</li>
-  </ol>
-  <li>Example of entering credentials for the Help Topic "Equipment Request," click on <b>Add Topic</b> to create the Help Topic</li>
-  <ul>
-    <li><img src="https://github.com/cyber-singh/post-install-config/assets/149118027/b004bb9f-336c-46f8-81e7-d12f1127bd33"/></li>
-  </ul>
-  
-</ul>
-  
+ - **Note:** osTicket already has four Help Topics by default **Feedback**, **General Inquiry**, **Report a Problem**, and **Report a Problem / Access Issue**.
+
+   <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/2475b22a-27d3-4fdc-9b1f-40d434d8b0af"/>
 </p>
 
-</br>
+<br>
+
+<p>
+
+ - We'll create four Help Topics to show how serious different problems can be, from most critical to less critical:
+
+ - Business Critical Outage
+ - Personal Computer Issues
+ - Equipment Request
+ - Password Reset
+  </p>
+
+  <br>
+  
+<p>
+    
+ - To create a Help Topic, follow the example for "Equipment Request" and click Add Topic.
+
+   <img src="https://github.com/cyber-singh/post-install-config/assets/149118027/b004bb9f-336c-46f8-81e7-d12f1127bd33"/>
+</p>
+
+****
 
 <h3>Further Reading and Manual</h3>
 <ul>
